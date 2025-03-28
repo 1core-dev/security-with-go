@@ -11,7 +11,7 @@ import (
 func main() {
 	// Create a file to write the archive buffer to
 	// Could also use an in memory buffer.
-	outFile, err := os.Create("test.tar")
+	outFile, err := os.Create("test.zip")
 	if err != nil {
 		log.Fatal(err)
 	}
