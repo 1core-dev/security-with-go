@@ -1,3 +1,4 @@
+// Cryptographically secure pseudo-random number generator
 package main
 
 import (
