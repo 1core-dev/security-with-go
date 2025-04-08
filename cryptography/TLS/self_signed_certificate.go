@@ -52,7 +52,7 @@ func setupCertificateTemplate(isCA bool) x509.Certificate {
 	serialNumberLimit := new(big.Int).Lsh(big.NewInt(1), 128)
 	randomNumber, err := rand.Int(rand.Reader, serialNumberLimit)
 	if err != nil {
-		log.Fatal("Error generating random serial number. ", err)
+		log.Fatalf("Error generating random serial number: %v", err)
 	}
 
 	nameInfo := pkix.Name{
