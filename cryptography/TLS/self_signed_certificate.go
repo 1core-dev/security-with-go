@@ -122,7 +122,7 @@ func writeCertToPemFile(outputFilename string, derBytes []byte) {
 	// Open file for writing
 	certOutfile, err := os.Create(outputFilename)
 	if err != nil {
-		log.Fatal("Unable to open certificate output file. ", err)
+		log.Fatalf("Unable to open certificate output file: %v", err)
 	}
 	defer certOutfile.Close()
 
