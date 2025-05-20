@@ -6,9 +6,9 @@ import (
 	"golang.org/x/crypto/ssh"
 )
 
-// var username = "username"
-// var password = "password"
-// var host = "example.com:22"
+var username = "username"
+var password = "password"
+var host = "example.com:22"
 
 func main() {
 	config := &ssh.ClientConfig{
